@@ -1,0 +1,21 @@
+h2 #{user.name}
+
+p #[strong Name:] #{user.name}
+p #[strong Email:] #{user.email}
+
+div.actions
+  form(method='POST', action=`/delete/${user.id}?_method=DELETE`)
+    button(
+      type='submit',
+      hx-delete=`/delete/${user.id}`,
+      hx-target='#list',
+      hx-push-url='/users'
+      class='link'
+    ) Delete User
+    
+  a(
+    href=`/users/${user.id}/edit`,
+    hx-get=`/users/${user.id}/edit`,
+    hx-push-url='true',
+    hx-target='#content'
+  ) Edit User

@@ -1,0 +1,22 @@
+- isEditing = () => !(Object.keys(user).length === 0);
+
+h2=isEditing() ? "Edit User" : "New User"
+
+form(
+  action=isEditing() ? `/update/${user.id}?_method=PUT` : '/users',
+  method='POST',
+
+  hx-post=isEditing() ? false : '/users',
+  hx-put=isEditing() ? `/update/${user.id}` : false,
+  hx-target='#list',
+  hx-push-url=isEditing() ? `/users/${user.id}` : false
+  hx-on::after-request='if(event.detail.successful) this.reset()',
+)
+  label(for='name') Name:
+  input#name(type='text', name='name', required, value=user.name)
+
+  label(for='email') Email:
+  input#email(type='email', name='email', required, value=user.email)
+
+  div.actions
+    button(type='submit') Submit

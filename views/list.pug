@@ -1,0 +1,17 @@
+ul.user-list
+  each user in users
+    li
+      a(
+        href=`/users/${user.id}`,
+        hx-get=`/users/${user.id}`,
+        hx-target='#content'
+        hx-push-url='true',
+      )= user.name
+
+div.actions
+  a(
+    href='/users/new',
+    hx-get='/users/new',
+    hx-target='#content',
+    hx-push-url='true'
+  ) New User
