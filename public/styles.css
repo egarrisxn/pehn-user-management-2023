@@ -1,8 +1,10 @@
 :root {
   --color-primary: #ff00f7;
   --color-secondary: #2ee86f;
-  --color-background: #f9f9f9;
-  --color-text: #202037;
+  --color-body-background: #202037;
+  --color-body-text: #f9f9f9;
+  --color-list-background: #6565c1;
+  --color-list-text: #202037;
   --color-white: #fff;
   --color-light-gray: #c6c6c6;
   --color-flash: #ffd749;
@@ -33,7 +35,8 @@ body {
   font-size: 60%;
   font-weight: 300;
   line-height: 1.5;
-  color: var(--color-text);
+  background-color: var(--color-body-background);
+  color: var(--color-body-text);
 }
 header {
   position: relative;
@@ -45,7 +48,8 @@ header {
 #list {
   grid-area: list;
   padding: 25px;
-  background-color: var(--color-background);
+  background-color: var(--color-list-background);
+  color: var(--color-list-text);
 }
 #content {
   grid-area: content;
@@ -64,9 +68,13 @@ h1 {
 }
 h2 {
   margin-bottom: 1rem;
-  font-size: 2.3rem;
+  font-size: 2rem;
   line-height: 1;
-  color: var(--color-primary);
+  color: var(--color-secondary);
+}
+h3 {
+  font-size: 1.6rem;
+  color: var(--color-flash);
 }
 ul {
   font-size: 1.3rem;
@@ -80,7 +88,7 @@ ul li::before {
   color: var(--color-secondary);
 }
 ul a {
-  color: var(--color-text);
+  color: var(--color-light-gray);
   text-decoration: none;
 }
 .actions a,
@@ -113,17 +121,19 @@ input[type="email"] {
   margin-bottom: 1rem;
   padding: 0.3rem;
   font-size: 1.3rem;
-  background-color: var(--color-background);
+  background-color: var(--color-list-background);
+  color: var(--color-white);
   border: 1px solid var(--color-light-gray);
 }
 input[type="text"]:focus,
 input[type="email"]:focus {
-  border-color: var(--color-primary);
+  border-color: var(--color-secondary);
   outline: none;
 }
 button[type="submit"]:not(.link) {
   cursor: pointer;
-  padding: 0.6rem 1.2rem;
+  margin-top: 0.4rem;
+  padding: 0.4rem 1.2rem;
   font-size: 1.3rem;
   color: var(--color-white);
   background-color: var(--color-primary);
@@ -172,7 +182,10 @@ p + .actions {
     font-size: 2.5rem;
   }
   h2 {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
+  }
+  h3 {
+  font-size: 1.4rem;
   }
   ul {
     font-size: 1.2rem;
@@ -230,7 +243,13 @@ p + .actions {
   h2 {
     font-size: 1.4rem;
   }
+  h3 {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
   ul {
+    margin-top: 1rem;
     font-size: 1rem;
   }
   p {
