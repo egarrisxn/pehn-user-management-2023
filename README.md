@@ -1,4 +1,4 @@
-# PEHN STACK | USER MANAGEMENT 2023
+# PEHN STACK | USER MANAGEMENT 2024
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![GitHub repo size](https://img.shields.io/github/repo-size/egarrisxn/pehn-user-management-2023)
