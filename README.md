@@ -1,6 +1,6 @@
-# PEHN STACK | USER MANAGEMENT 2024
+# (PEHN) User Management 2024
 
-![pehn1](https://github.com/egarrisxn/pehn-user-management/assets/126130230/c9ec547f-25c4-4bc9-b98a-95bffbe87bf8)
+![pehn](https://github.com/user-attachments/assets/a7a2e687-b210-45e9-b88a-972846bf60e2)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![GitHub repo size](https://img.shields.io/github/repo-size/egarrisxn/pehn-user-management-2023)
