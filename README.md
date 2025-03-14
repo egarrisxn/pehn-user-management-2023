@@ -1,5 +1,7 @@
 # PEHN STACK | USER MANAGEMENT 2024
 
+![pehn1](https://github.com/egarrisxn/pehn-user-management/assets/126130230/c9ec547f-25c4-4bc9-b98a-95bffbe87bf8)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![GitHub repo size](https://img.shields.io/github/repo-size/egarrisxn/pehn-user-management-2023)
 ![GitHub last commit](https://img.shields.io/github/last-commit/egarrisxn/pehn-user-management-2023)
@@ -7,8 +9,6 @@
 ## Overview
 
 Pug, Express, HTMX, & Node.js Powered User Management Application.
-
-![pehn1](https://github.com/egarrisxn/pehn-user-management/assets/126130230/c9ec547f-25c4-4bc9-b98a-95bffbe87bf8)
 
 ## Technologies
 
